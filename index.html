@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Dashboard Camutanga</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Camutanga</h2>
+
+<ul>
+
+<li>Visão Geral</li>
+<li>Criminalidade</li>
+<li>Mapa</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Dashboard de Segurança Urbana</h1>
+
+</header>
+
+<section class="cards">
+
+<div class="card pop">
+<h2 id="pop"></h2>
+<p>População</p>
+</div>
+
+<div class="card veic">
+<h2 id="veic"></h2>
+<p>Veículos</p>
+</div>
+
+<div class="card roubo">
+<h2 id="roubos"></h2>
+<p>Roubos</p>
+</div>
+
+<div class="card furto">
+<h2 id="furtos"></h2>
+<p>Furtos</p>
+</div>
+
+</section>
+
+<section class="graficos">
+
+<h3>Crimes últimos 6 meses</h3>
+
+<canvas id="graficoCrimes"></canvas>
+
+</section>
+
+<section class="graficos">
+
+<h3>Comparação entre cidades</h3>
+
+<canvas id="graficoCidades"></canvas>
+
+</section>
+
+<section class="mapa">
+
+<h3>Mapa de ocorrências</h3>
+
+<div id="map"></div>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
